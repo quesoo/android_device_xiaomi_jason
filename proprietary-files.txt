@@ -338,8 +338,8 @@ vendor/lib64/hw/gatekeeper.sdm660.so|e8f32651e4bfff88fcc02c34eca6cd5f04a444aa
 vendor/lib/hw/keystore.sdm660.so|ad49563962736752cd094b113e46658e1b5e6d39
 vendor/lib64/hw/keystore.sdm660.so|645881b7a2709dfce5d6b9be9df4659ec2ab0eac
 
-# NFC - from LA.UM.7.2.r1-06900-sdm660.0
-vendor/bin/nqnfcinfo|cab8da1ddfa0fb10210f28127de4e5da6c423b69
+# NFC - from LA.UM.8.2.r1-05100-sdm660.0
+vendor/bin/nqnfcinfo|9a56022ced4ad08274ce5d0ebd571d9b7317b2f9
 
 # NFC firmware
 vendor/lib/libpn553_fw.so
