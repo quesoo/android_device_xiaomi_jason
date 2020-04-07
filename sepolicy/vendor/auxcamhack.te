@@ -1,0 +1,34 @@
+#============= hal_camera_default ==============
+allow hal_camera_default default_prop:file { getattr open read };
+allow hal_camera_default persist_camera_prop:file { getattr open read };
+
+#============= isolated_app ==============
+allow isolated_app app_data_file:file setattr;
+
+#============= platform_app ==============
+allow platform_app vendor_default_prop:file { getattr open read };
+
+#============= priv_app ==============
+allow priv_app device:dir open;
+allow priv_app vendor_default_prop:file { getattr open read };
+
+#============= system_app ==============
+allow system_app system_data_file:file open;
+
+#============= system_server ==============
+allow system_server persist_camera_prop:file { getattr open read };
+allow system_server vendor_default_prop:file { getattr open read };
+
+#============= untrusted_app ==============
+allow untrusted_app persist_camera_prop:file { getattr open read };
+allow untrusted_app vendor_default_prop:file { open read };
+
+#============= untrusted_app_27 ==============
+allow untrusted_app_27 log_tag_prop:property_service set;
+allow untrusted_app_27 persist_camera_prop:file { getattr open read };
+allow untrusted_app_27 proc:file { getattr open read };
+allow untrusted_app_27 proc_tty_drivers:file { getattr open read };
+allow untrusted_app_27 proc_version:file { getattr open read };
+allow untrusted_app_27 property_socket:sock_file write;
+allow untrusted_app_27 serialno_prop:file { getattr open read };
+allow untrusted_app_27 vendor_default_prop:file { getattr open read };
