@@ -27,6 +27,7 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/jason
 
 # Kernel
+SELINUX_IGNORE_NEVERALLOWS := true
 TARGET_KERNEL_CONFIG := jason_defconfig
 TARGET_KERNEL_VERSION := 4.4
 
