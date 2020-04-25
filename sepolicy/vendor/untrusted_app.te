@@ -1,0 +1,2 @@
+get_prop(untrusted_app_all, adsprpc_prop)
+get_prop(untrusted_app_all, vendor_default_prop)
